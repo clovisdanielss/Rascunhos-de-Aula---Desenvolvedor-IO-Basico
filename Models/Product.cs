@@ -5,7 +5,9 @@ namespace ProjetoBasicoDesenvolvedorIOMVCCore.Models
 {
     public class Product : Entity
     {
+        [DisplayName("Fornecedor")]
         public Guid SupplierId { get; set; }
+        [DisplayName("Fornecedor")]
         public Supplier Supplier { get; set; }
         [DisplayName("Nome")]
         [Required(ErrorMessage = "O campo Nome é obrigatório")]
